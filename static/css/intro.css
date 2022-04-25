@@ -16,3 +16,13 @@ body {
 .owl-nav {
     display: none;
 }
+
+.intro-msg {
+    font-size: 26px;
+    font-family: 'East Sea Dokdo', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

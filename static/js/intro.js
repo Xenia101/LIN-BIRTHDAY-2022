@@ -16,7 +16,7 @@ $(document).ready(function () {
         itemsTablet: false,
         itemsMobile: false,
 
-        animateIn: 'animate__slideInRight',
+        animateIn: 'puffIn',
 
         responsive: {
             0: {

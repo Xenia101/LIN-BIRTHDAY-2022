@@ -11,7 +11,7 @@ def intro():
 
 @app.route('/<int:page>', methods=['GET'])
 def story(page):
-    return render_template(f'page{page}.html')
+    return render_template(f'./pages/page{page}.html')
 
 if __name__ == '__main__':
     app.run(host='158.247.236.137', debug=True, port=80)
