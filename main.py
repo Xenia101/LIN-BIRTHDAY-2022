@@ -5,6 +5,10 @@ app = Flask(__name__, static_folder='./static/')
 def main():
     return render_template('main.html')
 
+@app.route('/intro', methods=['GET'])
+def intro():
+    return render_template('intro.html')
+
 @app.route('/<int:page>', methods=['GET'])
 def story(page):
     return render_template(f'page{page}.html')

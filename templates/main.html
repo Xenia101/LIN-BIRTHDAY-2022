@@ -2,10 +2,38 @@
 {% block title %}HOME{% endblock %}
 {% block head %}
   {{ super() }}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Staatliches&display=swap" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
-  <h5>test</h5>
+<div class="container">
+  <div class="row h-100 text-center section">
+    <div id="col" class="col-md-12 my-auto">
+        <div class="main magictime vanishIn">
+          <div class="item" data-toggle="modal" data-target=".bd-example-modal-lg">
+            <a href="/intro"><i class="fas fa-dice-d20" id="main-icon"></i></a>
+          </div>
+          <div class="circle" style="animation-delay: -3s"></div>
+          <div class="circle" style="animation-delay: -2s"></div>
+          <div class="circle" style="animation-delay: -1s"></div>
+          <div class="circle" style="animation-delay: 0s"></div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="header text-center">
+  <p style="font-family: 'Staatliches', cursive;" class="hr-sect mb-5 magictime slideUpReturn">2022-05-20</p>
+  <p style="font-family: 'Gugi', cursive;" class="pt-2 magictime boingInUp">Message</p>
+</div>
+
+<div class="footer text-center">
+  <p style="font-family: 'Staatliches', cursive;" class="magictime slideDownReturn">© 2021. Junyeon. all rights reserved.</p>
+</div>
+
 {% endblock %}
 
 {% block footer %}
