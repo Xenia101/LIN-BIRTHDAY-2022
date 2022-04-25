@@ -14,5 +14,5 @@ def story(page):
     return render_template(f'page{page}.html')
 
 if __name__ == '__main__':
-    app.run(host='172.31.46.197', debug=True, port=80)
+    app.run(host='158.247.236.137', debug=True, port=80)
 

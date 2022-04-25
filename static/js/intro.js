@@ -8,10 +8,15 @@ $(document).ready(function () {
         nav: false,
         dots: false,
 
+        autoplay: true,
+        autoplayTimeout: 4000,
+
         itemsDesktop: false,
         itemsDesktopSmall: false,
         itemsTablet: false,
         itemsMobile: false,
+
+        animateIn: 'animate__slideInRight',
 
         responsive: {
             0: {

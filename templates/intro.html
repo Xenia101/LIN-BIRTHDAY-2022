@@ -3,6 +3,7 @@
 {% block head %}
   {{ super() }}
   <link rel="stylesheet" href="{{ url_for('static', filename='css/intro.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 {% endblock %}
 
@@ -10,7 +11,17 @@
 <div class="container">
   <div class="row h-100 text-center section">
     <div id="col" class="col-md-12 my-auto">
-        12312
+      <div id="owl-demo" class="owl-carousel owl-theme">
+        <div class="item vh-100 d-flex justify-content-center align-items-center">
+          <p class="magictime slideLeftReturn">1</p>
+        </div>
+        <div class="item vh-100 d-flex justify-content-center align-items-center">
+          <p class="magictime slideLeftReturn">2</p>
+        </div>
+        <div class="item vh-100 d-flex justify-content-center align-items-center">
+          <button type="button" class="btn btn-light">다음으로..</button>
+        </div>       
+      </div>
     </div>
   </div>
 </div>

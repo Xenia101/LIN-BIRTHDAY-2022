@@ -18,3 +18,8 @@ html, body {
 a {
   text-decoration: none;
 }
+
+.bar {
+  background:#8a2be2;
+  opacity: .7;
+}
