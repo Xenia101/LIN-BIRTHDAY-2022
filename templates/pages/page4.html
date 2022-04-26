@@ -30,22 +30,45 @@
   <div class="row h-100 text-center section">
     <div id="col" class="col-md-12 my-auto">
       
-      <div class="card m-2">
+      <div class="card m-2 magictime spaceInRight">
         <div class="card-body p-2">
           드디어 마지막 문제다 !
 
           <br>
 
           <div class="card-text mt-4" style="font-size: 12px;">
-            <p>1. 하뇨와 준뇨는 겨울에 ○○ 먹는 것을 좋아하지</p>
-            <p>2. 19년 8월 우린 갑자기 ○○으로 여행을 갔어</p>
-            <p>3. 19년 서울 여행 서울역에서 "문화역 서울 ○○○"앞에서 사진을 찍었어</p>
-            <p>4. 우리가 2020년 해돋이를 본 장소 ○○○</p>
-            <p>5. 21년에 ○○○에 있는 진로 두꺼비 앞에서 사진을 찍었지</p>
-            <p>6. 전주 여행때 ○○상회 앞에서 찍은 하뇨 사진</p>
+            <p>1. 19년 8월 우린 갑자기 ○○으로 여행을 갔어</p>
+            <p>2. 19년 서울 여행 서울역에서 "문화역 서울 ○○○"앞에서 사진을 찍었어</p>
+            <p>3. 21년에 ○○○에 있는 진로 두꺼비 앞에서 사진을 찍었지</p>
+            <p>4. 전주 여행때 ○○상회 앞에서 찍은 하뇨 사진</p>
           </div>
         </div>
       </div>
+
+      <div class="card m-2 magictime spaceInLeft">
+        <div class="card-body p-2">
+          <div class="input-group mb-3 input-group-sm">
+            <input id="a1" type="text" class="form-control" placeholder="1번" aria-label="Recipient's username" aria-describedby="button-addon1" maxlength="2">
+          </div>
+
+          <div class="input-group mb-3 input-group-sm">
+            <input id="a2" type="text" class="form-control" placeholder="2번" aria-label="Recipient's username" aria-describedby="button-addon2" maxlength="3">
+          </div>
+
+          <div class="input-group mb-3 input-group-sm">
+            <input id="a3" type="text" class="form-control" placeholder="3번" aria-label="Recipient's username" aria-describedby="button-addon3" maxlength="3">
+          </div>
+
+          <div class="input-group mb-3 input-group-sm">
+            <input id="a4" type="text" class="form-control" placeholder="4번" aria-label="Recipient's username" aria-describedby="button-addon4" maxlength="2">
+          </div>
+
+          <div class="d-grid gap-2">
+            <button type="button" id="ok4" class="mt-2 btn btn-sm btn-light">다시 미래로..</button> 
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
@@ -53,6 +76,33 @@
 
 {% block footer %}
   {{ super() }}
+
+  <script>
+    $('#ok4').on('click', function() {
+      var a1 = $('#a1').val();
+      var a2 = $('#a2').val();
+      var a3 = $('#a3').val();
+      var a4 = $('#a4').val();
+
+      if(a1=="대천" && a2=="284" && a3=="월미도" && a4=="경남") {
+        //ending
+        var percentage = 100;
+        var curr = 75
+        var update = setInterval(function() {
+          if (curr > percentage) {
+            clearInterval(update);
+          }
+          $('.progress-bar').css('width', curr+'%');
+          curr++;
+        }, 15)
+        
+
+        setTimeout(() => location.href = '/ending', 3000);
+      } else {
+        alert('실패! 다시 확인해주세요');
+      }
+    });
+  </script>
 
   <script>
     function updateProgressBar() {

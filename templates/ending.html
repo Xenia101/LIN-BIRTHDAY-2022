@@ -1,0 +1,21 @@
+{% extends "layout/layout.html" %}
+{% block title %}HOME{% endblock %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row h-100 text-center section">
+    <div id="col" class="col-md-12 my-auto">
+        ending
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block footer %}
+  {{ super() }}
+{% endblock %}

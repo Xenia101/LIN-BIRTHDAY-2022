@@ -9,6 +9,10 @@ def main():
 def intro():
     return render_template('intro.html')
 
+@app.route('/ending', methods=['GET'])
+def ending():
+    return render_template('ending.html')
+
 @app.route('/<int:page>', methods=['GET'])
 def story(page):
     return render_template(f'./pages/page{page}.html')
