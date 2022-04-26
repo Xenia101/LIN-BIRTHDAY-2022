@@ -7,8 +7,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
 {% endblock %}
+
+<!--
+INTRO 스토리
+
+-->
 
 {% block content %}
 <div class="container">
@@ -16,14 +21,47 @@
     <div id="col" class="col-md-12 my-auto">
       <div id="owl-demo" class="owl-carousel owl-theme">
         <div class="item vh-100 d-flex justify-content-center align-items-center">
-          <p class="magictime puffIn intro-msg">안녕하세요</p>
+          <p class="magictime puffIn intro-msg">어느날..<br>갑자기 겁쟁이가 된 준뇨</p>
         </div>
         <div class="item vh-100 d-flex justify-content-center align-items-center">
-          <p class="magictime puffIn intro-msg">텍스트 테스트</p>
+          <p class="intro-msg">상남자였던 준뇨가 이제는 하남자?!</p>
         </div>
         <div class="item vh-100 d-flex justify-content-center align-items-center">
-          <button class="btn btn-outline-light"><a href="/1">NEXT..</a></button>
-        </div>       
+          <p class="intro-msg">침울해하는 준뇨를 본 하린은..<br>준뇨를 다시 상남자로 만들어 주기로 결심하는데..</p>
+        </div>
+        <div class="item vh-100 d-flex justify-content-center align-items-center">
+          <p class="intro-msg">상남자로 되돌릴 방법을 고민하던<br>그때 !</p>
+        </div>
+        <div class="item vh-100 d-flex justify-content-center align-items-center">
+          <div class="position-relative">
+            <img style="width: 160px; height: auto; margin:0;" src="{{ url_for('static', filename='images/intro1.jpg') }}" alt="">
+            <p class="mt-1" style="color:white; font-family: 'Noto Sans KR', sans-serif;">스윽..</p>
+          </div>
+        </div>
+        <div class="item vh-100 d-flex justify-content-center align-items-center">
+          <div class="position-relative">
+            <img style="width: 160px; height: auto; margin:0;" src="{{ url_for('static', filename='images/intro1.jpg') }}" alt="">
+            <p class="mt-1" style="color:white; font-family: 'Noto Sans KR', sans-serif;">안녕 나는 준봉<br>내가 도와줄테니 걱정마</p>
+          </div>
+        </div>
+        <div class="item vh-100 d-flex justify-content-center align-items-center">
+          <div class="position-relative">
+            <img style="width: 160px; height: auto; margin:0;" src="{{ url_for('static', filename='images/intro1.jpg') }}" alt="">
+            <p class="mt-1" style="color:white; font-family: 'Noto Sans KR', sans-serif;">과거로 보내줄테니<br>준뇨의 <span class="span-text">상남자 에너지</span>를<br>채워오라구</p>
+          </div>
+        </div>
+        <div class="item vh-100 d-flex justify-content-center align-items-center">
+          <div class="position-relative">
+            <p>내가 상남자 준뇨의 매력에 빠진 그때가<br>언제였더라..?</p>
+            <div class="input-group mb-3">
+              <input type="tel" maxlength="1" min="0" max="9" onlyNumber style="width:10px" class="form-control m-1" id="a1">
+              <input type="tel" maxlength="1" min="0" max="9" onlyNumber style="width:10px" class="form-control m-1" id="a2">
+              <input type="tel" maxlength="1" min="0" max="9" onlyNumber style="width:10px" class="form-control m-1" id="a3">
+              <input type="tel" maxlength="1" min="0" max="9" onlyNumber style="width:10px" class="form-control m-1" id="a4">
+            </div>
+            <button type="button" class="btn btn-outline-light move">과거로 이동</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

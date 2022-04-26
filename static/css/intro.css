@@ -19,10 +19,15 @@ body {
 
 .intro-msg {
     font-size: 26px;
-    font-family: 'East Sea Dokdo', cursive;
+    font-family: 'Nanum Pen Script', cursive;
 }
 
 a {
     text-decoration: none;
     color: white;
+}
+
+.span-text {
+    color: #8a2be2;
+    font-family: 'Noto Sans KR', sans-serif;
 }
