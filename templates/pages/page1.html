@@ -29,7 +29,11 @@
 <div class="container">
   <div class="row h-100 text-center section">
     <div id="col" class="col-md-12 my-auto">
-      PAGE 1
+      <!-- Typed js -->
+      <span id="typed"></span>
+
+      <p class="mt-5">sdf</p>
+
     </div>
   </div>
 </div>
@@ -37,4 +41,6 @@
 
 {% block footer %}
   {{ super() }}
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="{{ url_for('static', filename='js/pages.js') }}"></script>
 {% endblock %}

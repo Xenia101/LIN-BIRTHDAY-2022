@@ -9,10 +9,10 @@ $(document).ready(function () {
         dots: false,
 
         autoplay: true,
-        autoplayTimeout: 1, // 4000,
+        autoplayTimeout: 4000,
 
-        //touchDrag: true,
-        //mouseDrag: true,
+        touchDrag: false,
+        mouseDrag: false,
 
         itemsDesktop: false,
         itemsDesktopSmall: false,
