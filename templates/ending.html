@@ -3,19 +3,31 @@
 {% block head %}
   {{ super() }}
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/ending.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
-<div class="container">
-  <div class="row h-100 text-center section">
-    <div id="col" class="col-md-12 my-auto">
-        ending
+<div id="total">
+  <div class="container">
+    <div class="row h-100 text-center section">
+      <div id="col" class="col-md-12 my-auto">
+        <img class="magictime spaceInDown" id="ending-img" src="{{ url_for('static', filename='images/ending.jpg') }}" alt="">
+        <br>
+        <span id="typed"></span>
+        <br>
+      </div>
     </div>
   </div>
+</div>
+
+<div class="t">
 </div>
 
 {% endblock %}
 
 {% block footer %}
   {{ super() }}
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="{{ url_for('static', filename='js/ending.js') }}"></script>
 {% endblock %}
